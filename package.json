@@ -1,0 +1,22 @@
+{
+  "name": "porsche_transfer_db",
+  "version": "1.0.0",
+  "description": "db  transfer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Colinkang/porsche_transfer_db.git"
+  },
+  "author": "eric",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Colinkang/porsche_transfer_db/issues"
+  },
+  "homepage": "https://github.com/Colinkang/porsche_transfer_db#readme",
+  "dependencies": {
+    "mysql": "^2.15.0"
+  }
+}
