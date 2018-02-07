@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Colinkang/porsche_transfer_db#readme",
   "dependencies": {
-    "mysql": "^2.15.0"
+    "mysql": "^2.15.0",
+    "uuid": "^3.2.1"
   }
 }
