@@ -1,5 +1,5 @@
 const { P, pool, queryFormat } = require('./utils');
-async function notification(params) {
+async function notification() {
     let query = queryFormat('select uuid,to_id as member_id,content,time_created as created_time,  CASE is_read WHEN 1 THEN ? ELSE ? END as is_read  from NOTIFICATION ', ['Y', 'N']);
     let result = await P(pool, 'query', query);
     for (let i = 0; i < result.length; i++) {
@@ -9,4 +9,5 @@ async function notification(params) {
         await P(pool, 'query', sql);
     };
 };
+
 module.exports = { notification: notification };

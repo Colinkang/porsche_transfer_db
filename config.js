@@ -4,7 +4,7 @@ const config = {
         port: 3306,
         user: 'root',
         password: '',
-        database: 'old_porsche'
+        database: 'porsche_fn'
     }
 };
 

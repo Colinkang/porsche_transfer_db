@@ -1,6 +1,6 @@
 const { P, pool, queryFormat } = require('./utils');
-async function member_update_info_history(params) {
-    let query = queryFormat('select member_id,origin_data,updated_data,time_created as created_time from member_login_history ');
+async function member_update_info_history() {
+    let query = queryFormat('select member_id,origin_data,updated_data,time_created as created_time from MEMBER_UPDATE_INFO_HISTORY ');
     let result = await P(pool, 'query', query);
     for (let i = 0; i < result.length; i++) {
         result[i].created_time = new Date(result[i].created_time).getTime();
